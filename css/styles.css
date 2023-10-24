@@ -395,7 +395,7 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg {
+.svg-customers {
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -422,6 +422,7 @@ img {
 .footer {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .footertwo {
@@ -456,7 +457,7 @@ img {
 
 /* 5 */
 
-.modal-conteiner {
+.modal-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -549,4 +550,42 @@ img {
 .portfolio-style:hover .wrap,
 .portfolio-style:focus .wrap {
     transform: translateY(0%);
+}
+
+/* 6 */
+
+.footerthree {
+    margin-right: 80px;
+}
+
+.form-footer {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.subscribe-button {
+    display: inline-flex;
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--pressed-state-color);
 }
