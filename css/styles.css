@@ -605,3 +605,11 @@ input::placeholder {
     line-height: 2;
     letter-spacing: 0.48px;
 }
+
+input:not(:placeholder-shown):valid {
+    color: var(--white-background-color);
+}
+
+input:not(:placeholder-shown):invalid {
+    color: var(--white-background-color);
+}
