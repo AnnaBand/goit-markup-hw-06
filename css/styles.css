@@ -606,6 +606,11 @@ img {
     letter-spacing: 0.48px;
 }
 
+.form-footer input:focus {
+    outline: none;
+    color: var(--white-background-color)
+}
+
 .form-footer input:not(:placeholder-shown):valid {
     color: var(--white-background-color);
 }
@@ -651,6 +656,11 @@ img {
 
 .form-field input:focus {
     outline: none;
+}
+
+.form-field:focus-within {
+    border-color: var(--primary-brand-color);
+    fill: var(--primary-brand-color);
 }
 
 .form-modal-details label {
