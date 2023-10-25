@@ -422,7 +422,6 @@ img {
 .footer {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
 }
 
 .footertwo {
@@ -588,4 +587,21 @@ img {
 .subscribe-button:hover,
 .subscribe-button:focus {
     background-color: var(--pressed-state-color);
+}
+
+input {
+    background-color: var(--dark-color);
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white-background-color);
+}
+
+input::placeholder {
+    color: var(--white-background-color);
+    padding-left: 16px;
+    padding-top: 8px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.48px;
 }
