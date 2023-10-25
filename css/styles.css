@@ -635,7 +635,7 @@ img {
 .form-modal-details {
     display: flex;
     flex-direction: column;
-    padding: 16px 24px;
+    padding: 16px 24px 0 24px;
 }
 
 .form-field {
@@ -679,11 +679,46 @@ textarea {
     letter-spacing: 0.48px;
     color: var(--modal-overlay-color);
     height: 120px;
+    border-radius: 4px;
+    border: 1px solid var(--modal-overlay-color);
     padding-top: 8px;
     padding-left: 16px;
+    margin-bottom: 16px;
 }
 
 textarea:focus-within {
     border-color: var(--primary-brand-color);
     outline: none;
+}
+
+.policy {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+    color: var(--subtle-text-color);
+}
+
+.send-button {
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-button:hover,
+.send-button:focus {
+    background-color: var(--pressed-state-color);
 }
