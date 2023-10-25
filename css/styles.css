@@ -700,6 +700,10 @@ textarea:focus-within {
     color: var(--subtle-text-color);
 }
 
+.policy-details {
+    
+}
+
 .send-button {
     width: 169px;
     height: 56px;
