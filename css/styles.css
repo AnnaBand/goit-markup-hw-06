@@ -702,8 +702,18 @@ textarea:focus-within {
 }
 
 .policy input {
-    width: 16px;
-    height: 16px;
+}
+
+.policy input[type="checkbox"] + label svg {
+    display: inline-block;
+    fill: transparent;
+    border-radius: 1px;
+    border: 1px solid var(--modal-overlay-color);
+}
+
+.policy input[type="checkbox"]:checked + label svg {
+    fill: var(--white-background-color);
+    background-color: var(--pressed-state-color);
 }
 
 .send-button {
