@@ -693,6 +693,7 @@ textarea:focus-within {
 
 .policy {
     display: flex;
+    align-items: center;
     gap: 8px;
     font-size: 12px;
     line-height: 1.2;
@@ -700,8 +701,9 @@ textarea:focus-within {
     color: var(--subtle-text-color);
 }
 
-.policy-details {
-    
+.policy input {
+    width: 16px;
+    height: 16px;
 }
 
 .send-button {
