@@ -557,21 +557,45 @@ img {
     margin-right: 80px;
 }
 
+.footerfour {
+    display: block;
+}
+
 .form-footer {
     display: flex;
     gap: 24px;
-    margin-top: 8px;
-    justify-content: center;
+}
+
+.input-footer {
+    background-color: transparent;
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white-background-color);
+    padding-left: 16px;
+    color: var(--white-background-color);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.48px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.input-footer::placeholder {
+    color: var(--white-background-color);
+}
+
+.input-footer:focus {
+    outline: none;
+    color: var(--white-background-color);
 }
 
 .subscribe-button {
-    display: inline-flex;
-    width: 165px;
+    display: flex;
+    min-width: 165px;
     height: 40px;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     border-radius: 4px;
     border: none;
     background-color: var(--primary-brand-color);
@@ -589,25 +613,8 @@ img {
     background-color: var(--pressed-state-color);
 }
 
-.form-footer input {
-    background-color: var(--dark-color);
-    width: 264px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid var(--white-background-color);
-    padding-left: 16px;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.48px;
-}
-
-.form-footer input::placeholder {
-    color: var(--white-background-color);
-}
-
-.form-footer input:focus {
-    outline: none;
-    color: var(--white-background-color);
+.svg-subscribe {
+    margin-left: 16px;
 }
 
 .modal-header {
@@ -702,7 +709,8 @@ textarea:focus-within {
     border: 1px solid var(--modal-overlay-color);
     border-radius: 2px;
     fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .policy-input:checked+.policy-label span {
