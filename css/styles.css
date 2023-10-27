@@ -625,12 +625,12 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    margin-bottom: 16px;
 }
 
 .form-modal {
     display: flex;
     flex-direction: column;
-    padding-top: 16px
 }
 
 .form-field {
