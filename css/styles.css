@@ -607,14 +607,6 @@ img {
 
 .form-footer input:focus {
     outline: none;
-    color: var(--white-background-color)
-}
-
-.form-footer input:not(:placeholder-shown):valid {
-    color: var(--white-background-color);
-}
-
-.form-footer input:not(:placeholder-shown):invalid {
     color: var(--white-background-color);
 }
 
@@ -717,6 +709,10 @@ textarea:focus-within {
     fill: var(--white-background-color);
     background-color: var(--pressed-state-color);
     border: none;
+}
+
+.policy-link {
+    color: var(--primary-brand-color);
 }
 
 .visually-hidden {
